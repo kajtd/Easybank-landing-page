@@ -1,0 +1,116 @@
+.backgroundImage {
+    width: 100%;
+    background-image: url("./../../images/bg-intro-desktop.svg");
+    background-position: 31vw -13vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 48px;
+    color: hsl(233, 26%, 24%);
+    z-index: 12;
+}
+
+.description {
+    color: hsl(233, 8%, 62%);
+    margin: 2rem 0;
+    max-width: 400px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.phoneImg {
+    background-image: url("./../../images/image-mockups.png");
+    background-position: 25% 80%;
+    background-repeat: no-repeat;
+    min-width: 300px;
+    width: 60%;
+    min-height: 100vh;
+}
+
+
+.phoneImg {
+    z-index: 3;
+}
+
+@media(max-width: 1500px) {
+    .wrapper {
+        padding: 2%;
+    }
+    
+    .phoneImg {
+        background-position: 0;
+        background-size: 120%;
+    }
+}
+
+@media(max-width: 1240px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+        max-width: 275px;
+    }
+}
+
+@media(max-width: 768px) {
+    .backgroundImage {
+        background-image: url("./../../images/bg-intro-mobile.svg");
+        background-position: 0px -30vw;
+    }
+    
+    .wrapper {
+      flex-direction: column-reverse;
+      padding: 1rem;
+      padding-top: 0;
+    }
+
+    .info {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .description {
+        width: auto;
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .phoneImg {
+        background-image: url("./../../images/image-mockups.png");
+        background-position: 0 -12vw;
+        background-size: 100%;
+        width: 100%;
+        height: 50vh;
+    }
+}
